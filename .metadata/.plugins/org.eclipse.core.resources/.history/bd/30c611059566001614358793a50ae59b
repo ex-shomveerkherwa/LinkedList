@@ -1,0 +1,28 @@
+package hashing;
+
+public class BasicHash {
+	
+	static char[] input = {'s','i','d','d','h','u'};
+	
+	public static void main(String[] args){
+		int count[] = {};
+		
+		for(int i=0 ;i<256 ; i++) {
+			count[i]={};
+		}
+		
+		for(int i=0 ;i< input.length; i++) {
+			if(count[input[i]] == 1) {
+				System.out.println("first repeated char "+input[i]);
+				break;
+			}
+			else
+				count[input[i]] = 1;
+			
+			if(i== input.length)
+				System.out.println("No repeated character");
+		}
+	}
+
+	
+}

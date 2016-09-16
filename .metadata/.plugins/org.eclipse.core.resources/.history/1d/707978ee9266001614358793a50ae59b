@@ -1,0 +1,7 @@
+package hashing;
+
+public class BasicHash {
+	
+	static char[] input = {'s','i','d','d','h','u'};
+
+}
